@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "star-wars";
+  src: local("Star-Jedi-V2"), url(./Star-Jedi-V2.woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "star-wars", sans-serif;
+  font-weight: 300;
+  background-color: black;
+  color: aliceblue;
+}
+
+.list {
+  cursor: pointer;
+}
+
+.list:hover {
+  text-decoration: underline solid;
+  text-decoration-color: aliceblue;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  background-color: aliceblue;
+  font-family: "star-wars", sans-serif;
+  padding: 0 10px 5px 10px;
+  cursor: pointer;
+}
