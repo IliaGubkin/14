@@ -10,6 +10,7 @@ const createDetailedList = (data, ul) => {
 };
 
 export const createDetailedPage = async (films, film) => {
+  loadResource('./filmsApp/style.css');
   container.innerHTML = '';
   let currentFilm = film;
 

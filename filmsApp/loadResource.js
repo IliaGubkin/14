@@ -1,3 +1,5 @@
+let cssLoaded = false;
+
 export const loadResources = async (resources) => {
   const allFetchResults = await Promise.all(Object.values(resources)
     .map(resource => Promise.all(resource
@@ -15,7 +17,6 @@ export const loadResources = async (resources) => {
   return result;
 };
 
-let cssLoaded = false;
 export const loadResource = async (resource) => {
   if (resource.endsWith('.css')) {
     if (!cssLoaded) {

@@ -2,6 +2,7 @@ import { loadDetailedPage, loadResource } from '../loadResource.js';
 import { filmList, container } from '../constants.js';
 
 export const createHomePage = async (films) => {
+  loadResource('./filmsApp/style.css');
   let currentFilms = films;
   if (!films) {
     currentFilms = await loadResource('https://swapi.dev/api/films');
@@ -26,6 +27,4 @@ export const createHomePage = async (films) => {
     filmList.appendChild(li);
     container.appendChild(li);
   });
-
-  loadResource('./filmsApp/style.css');
 };
